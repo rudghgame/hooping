@@ -47,7 +47,7 @@ export default function Home() {
       <main className="flex-1 overflow-y-auto p-4 space-y-3">
         {filteredItems.length > 0 ? (
           filteredItems.map((item) => (
-            <Link key={item.id} href={`/match/${item.id}`} className="block">
+            <Link key={item.id} href={`/match/${item.id}`} className="block" draggable="false">
               <Card className="border-slate-200 bg-white active:scale-[0.98] transition-transform cursor-pointer">
                 <CardContent className="p-4 flex justify-between items-center">
                   <div>
