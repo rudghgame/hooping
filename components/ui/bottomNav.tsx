@@ -28,7 +28,8 @@ export function BottomNav() {
 
   return (
     // 모바일 레이아웃(max-w-md) 크기에 맞추어 화면 하단에 고정
-    <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md h-16 bg-white border-t border-slate-200 shadow-[0_-2px_10px_rgba(0,0,0,0.03)] z-50 flex items-center justify-around px-2">
+    <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md h-16 bg-white border-t border-slate-200 shadow-[0_-2px_10px_rgba(0,0,0,0.03)] z-50 flex items-center justify-around px-2
+    md:border-x md:border-slate-200">
       {navItems.map((item) => {
         const Icon = item.icon;
         // 현재 페이지 주소와 메뉴의 링크가 일치하는지 확인
